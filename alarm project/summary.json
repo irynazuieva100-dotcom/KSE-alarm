@@ -1,0 +1,14 @@
+{
+  "origins": 90,
+  "verified": 90,
+  "unique_snapshots": 90,
+  "download_errors": {},
+  "validation_origins": 60,
+  "test_origins": 30,
+  "lag_days": [
+    3
+  ],
+  "publication_scope": "Snapshot availability bound; individual original-message publication times unknown. Use only event data from the bound snapshot; never later revisions as inputs.",
+  "coverage_scope": "Calendar-complete is NOT verified complete source coverage. No regional outage metadata available.",
+  "historical_simulation": "Forecast origins are retrospective simulated origins, not claims of predictions actually issued then."
+}
