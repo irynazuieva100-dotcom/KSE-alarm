@@ -1,0 +1,12 @@
+{
+  "sha": "6e8329769faec1e64dee6a1e09d6a0f4d5482e35",
+  "source_url": "https://raw.githubusercontent.com/Vadimkin/ukrainian-air-raid-sirens-dataset/6e8329769faec1e64dee6a1e09d6a0f4d5482e35/datasets/volunteer_data_en.csv",
+  "raw_sha256": "fa781199eea13f208deaaefd97ecb0eb428d78732de0fc97ff39fc7f5b3e34a4",
+  "source_rows": 108331,
+  "kyiv_rows": 2438,
+  "latest_global_start_local": "2026-08-21T03:42:43+03:00",
+  "last_calendar_complete_day": "2026-08-20",
+  "retrieved_at_utc": "2026-10-11T16:43:16.559875+00:00",
+  "availability_evidence": "Successful scheduled GitHub Actions run with this head_sha and inspected default event-SHA checkout; updated_at is used as conservative upper bound, not exact publication time.",
+  "kyiv_sha256": "86a5d338bdacc29a58d728d8afb744c173d72bcfc92a1657478917cac5254ede"
+}

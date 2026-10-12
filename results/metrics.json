@@ -1,0 +1,116 @@
+{
+  "target": "Kyiv City alert starts during local calendar day",
+  "simulated_origin": "00:00 Europe/Kyiv; historical replay, not real-time issued predictions",
+  "availability_rule": "Input head SHA of successful scheduled GitHub run completed before origin; conservative server updated_at bound",
+  "observed_data_gaps_days": [
+    3
+  ],
+  "supported_data_gaps_days": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "validation_dates": [
+    "2026-07-13",
+    "2026-09-08"
+  ],
+  "validation_origins_used": 58,
+  "validation_origins_excluded_due_to_unavailable_labels": 2,
+  "model_selection_dates": [
+    "2026-07-13",
+    "2026-08-11"
+  ],
+  "model_selection_samples": 30,
+  "calibration_dates": [
+    "2026-08-12",
+    "2026-09-08"
+  ],
+  "uncertainty": {
+    "nominal_coverage": 0.8,
+    "radius": 4.464285714285714,
+    "calibration_samples": 28,
+    "rank": 24,
+    "method": "finite-sample absolute-residual order statistic; chronological held-out calibration",
+    "guaranteed_coverage": false,
+    "caveat": "Time-series dependence and distribution shifts violate exchangeability; nominal coverage is a target, not a guarantee.",
+    "empirical_coverage": 1.0,
+    "mean_width": 9.266666666666667,
+    "test_samples": 30
+  },
+  "stability_block_winners": [
+    "mean28",
+    "mean28",
+    "mean7"
+  ],
+  "selection_labels_snapshot_sha": "8c0e44caf8eb443ac21ee8d9963d39e6fbf2af2c",
+  "selection_labels_available_by_utc": "2026-09-10T03:48:20Z",
+  "selection_label_cutoff": "2026-09-08",
+  "test_dates": [
+    "2026-09-11",
+    "2026-10-10"
+  ],
+  "selected_model": "mean28",
+  "validation_metrics": {
+    "last_observed": {
+      "MAE": 1.3666666666666667,
+      "RMSE": 1.6020819787597222
+    },
+    "weekly": {
+      "MAE": 1.5666666666666667,
+      "RMSE": 1.906130460732773
+    },
+    "mean7": {
+      "MAE": 1.1428571428571428,
+      "RMSE": 1.3607720897608493
+    },
+    "mean28": {
+      "MAE": 1.0857142857142856,
+      "RMSE": 1.2501360470182523
+    },
+    "ridge_1": {
+      "MAE": 1.165150940201555,
+      "RMSE": 1.3610504303227402
+    },
+    "ridge_10": {
+      "MAE": 1.16470527677302,
+      "RMSE": 1.3600918951580028
+    },
+    "ridge_100": {
+      "MAE": 1.163876202456972,
+      "RMSE": 1.3603838164687863
+    }
+  },
+  "test_metrics": {
+    "last_observed": {
+      "MAE": 1.3666666666666667,
+      "RMSE": 2.008316044185609
+    },
+    "weekly": {
+      "MAE": 1.8666666666666667,
+      "RMSE": 2.309401076758503
+    },
+    "mean7": {
+      "MAE": 1.242857142857143,
+      "RMSE": 1.609706949287675
+    },
+    "mean28": {
+      "MAE": 1.235714285714286,
+      "RMSE": 1.5505101201388727
+    }
+  },
+  "continuous_reporting_assumption": true,
+  "source_coverage_verified": false,
+  "scoring_snapshot_sha256": "d03747ee8bf056032b2eeef50cdcf964d65fa60a92243e91862db48b31377465",
+  "limitations": [
+    "Calendar-complete days assume continuous volunteer reporting; source coverage is not verified.",
+    "Availability proof relies on GitHub run metadata and inspected workflow; exact push time and original message publication times unknown.",
+    "Within each eligible snapshot, historical training examples use three-day time cutoffs; older revisions known by that forecast origin may be present.",
+    "Latest 30-day holdout was already inspected during prototype development. This is a revised backtest, not a pristine unseen test.",
+    "Historical replay does not claim predictions were actually issued then.",
+    "Empirical calibration does not guarantee coverage under dependent, shifting time-series distributions."
+  ]
+}
