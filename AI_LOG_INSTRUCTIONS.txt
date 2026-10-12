@@ -1,5 +1,0 @@
-The KSE submission requires a full plain-text export of the real AI conversation.
-This package DOES NOT contain a complete export. Do not replace it with a summary or a reconstructed conversation.
-Export/copy the real chat, including the applicant's requests, assistant responses, follow-ups, errors and corrections. Include the work through final checks. The assistant cannot reliably reconstruct all conversation content and tool records from local project files.
-Review for secrets or irrelevant personal information, without silently rewriting the engineering history. A GitHub code repository can omit the full chat if the submission form accepts it separately.
-REFLECTION_DRAFT.txt is a draft about actual events; read it and change any wording that does not match your own participation.
